@@ -57,6 +57,8 @@ G <- X1%*%t(X1)
 G1 <- G/sum(2*Palle*(1-Palle)) 
 
 # The dominance relationship matrix
+# For experimental series V, some hybrids use mixture testers, then the calculation of the dominance matrix needs
+# to change according to the allele frequency of the mixture testers.
 U<-X
 nGen<-dim(X)[1]
 for(i in 1:nmarker){
